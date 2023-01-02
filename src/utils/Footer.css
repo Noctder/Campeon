@@ -1,0 +1,26 @@
+p{
+    margin: 0!important;;
+}
+
+/* Footer */
+footer{
+    margin-top: 8rem;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    background-color: #F4F0F0;
+}
+
+@media (max-width: 1000px) {
+    .logo_campeon{
+        text-align: center;
+    }
+}
+
+@media (min-width: 1001px) {
+    .logo_campeon{
+        display: grid;
+        align-content: center;
+    }
+}
+

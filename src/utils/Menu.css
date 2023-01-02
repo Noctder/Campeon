@@ -1,0 +1,308 @@
+/* Habilitar rem */
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+
+.header{
+    background-image: url(../assets/images/fondo.png);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.barra{
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .barra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.header_centro{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.campeon{
+    width: 50%;
+}
+
+.obtener{
+    width: 25%;
+}
+
+@media (max-width: 768px) {
+    .campeon{
+        width: 75%;
+    }
+    
+    .obtener{
+        width: 50%;
+    }
+}
+
+.logo_inicio{
+    padding: 4rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+
+
+    .imagen_boton:before{
+        content: url(../assets/images/descargarcam.jpg);
+        float: left;
+    }
+    
+    .imagen_boton::after{
+        content: url(../assets/images/descargarmanpdf2.jpg);
+        float: right;
+    }
+}
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem!important;
+}
+
+/* Carta */
+
+
+.carta{
+    text-align: center; 
+ }
+ 
+ .entrada{
+     display: flex;
+     box-sizing: border-box;
+ 
+     border: 3px solid #5F9646;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+     border-radius: 12px;
+     padding: 1rem;
+     align-items: center;
+ }
+ 
+ .entrada_imagen{
+     width: 50%;
+     padding: 1rem;
+ }
+ 
+ @media (max-width: 1024px) {
+     .entrada_imagen{
+         width: 100%;
+         padding: 1rem;
+     }
+ }
+ 
+ 
+ @media (max-width: 1023px) {
+     .entrada_imagen{
+         width: 50%;
+         padding: 1rem;
+     }
+ 
+     .entrada{
+         display: flex;
+         flex-direction: column;
+         box-sizing: border-box;
+     
+         border: 3px solid #5F9646;
+         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+         border-radius: 12px;
+         padding: 1rem;
+         align-items: center;
+     }
+ }
+ 
+ .entrada_contenido{
+     text-align: justify;
+     padding: 1rem;
+ }
+ 
+ .flex_carta{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ .alinear-derecha{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+ }
+ 
+ .boton_carta{
+     background-color: #A9CF46!Important;
+     color: #FFFFFF!Important;
+     padding: 1rem 3rem!Important;
+     margin-top: 3rem;
+     text-decoration: none!Important;
+     text-transform: uppercase;
+     font-weight: bold!Important;
+     border-radius: .4rem!Important;
+     text-align: center!Important;
+     border: none!Important;
+     font-family: 'Inter'!Important;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ @media (max-width: 1023px) {
+     .video{
+         gap: 4rem;
+     }
+     
+     .vista_cel{
+         text-align: justify;
+     }
+     .video_iframe{
+        width: 100%;
+    }
+ 
+     
+ }
+
+ @media (max-width: 767px) {
+    .imagen_boton{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+
+    .campeonblack{
+        width: 100%!important;
+    }
+
+    .facil{
+        width: 80%!important;
+    }
+ }
+ 
+ @media (max-width: 1023px) {
+    .imagen_boton{
+        overflow: hidden;
+    }
+    
+    .imagen_boton:before{
+        content: url(../assets/images/descargarcam.jpg);
+        
+    }
+    
+    .imagen_boton::after{
+        content: url(../assets/images/descargarmanpdf2.jpg);
+        
+    }
+
+    .icons_Text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+    }
+
+    .tabs_icons{
+        width: min-content!important;
+    }
+
+    .tabs_descripcion{
+        width: 100%!important;
+    }
+ }
+ 
+ .navegador_icon{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ @media (min-width: 1024px) {
+     .video{
+         display: flex;
+         gap: 4rem;
+     }
+     
+     .video_iframe{
+        width: 100%;
+    }
+     
+     .navegador_descripcion{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     
+     
+     .vista_cel{
+         text-align: left;
+         display: block;
+     }
+     
+     .imagen_boton{
+         overflow: hidden;
+     }
+     
+     .imagen_boton:before{
+         content: url(../assets/images/descargarcam.jpg);
+     }
+     
+     .imagen_boton::after{
+         content: url(../assets/images/descargarmanpdf2.jpg);
+     }
+ }
+
+.nav-link.border-info {
+    border-color: #333333 !important;
+}
+
+.nav-link.active.border-info {
+    border-color: #54b4d3 !important;
+}

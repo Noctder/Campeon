@@ -1,0 +1,12 @@
+.headerr{
+    width: 100%;
+    position: relative;
+    background-color: #A1A1A1;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}

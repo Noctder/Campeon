@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+    .input_grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .input_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+        gap: 2rem;
+    }
+}
+
+.boton_enviar{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    border: none;
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+
+    width: 208px;
+    height: 42px;
+
+    background: rgba(156, 191, 64, 0.870588);
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

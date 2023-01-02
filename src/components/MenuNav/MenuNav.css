@@ -1,0 +1,124 @@
+.header{
+    background-image: url(../../assets/images/fondo.png);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.barra{
+    padding-top: 4rem;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.header_centro{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.campeon{
+    width: 50%;
+}
+
+.obtener{
+    width: 25%;
+}
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem!important;
+}
+
+@media (min-width: 1000px) {    
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 999px) {
+    .barra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .boton_obtener{
+        font-family: 'Inter'!important;
+        font-style: normal;
+        font-weight: 700!important;
+        line-height: 124.5%!important;
+    
+        text-align: center;
+        letter-spacing: 0.335em!important;
+        padding-top: 2rem!important;
+        padding-bottom: 2rem!important;
+    
+        color: #FFFFFF!important;
+        background-color: #83D046!important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 12px!important;
+        mix-blend-mode: normal;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        width: calc(30%);
+        font-size: calc(1.7vw)!important;
+    }
+
+    .boton_obtener:hover{
+        background-color: #69DF0D!important ;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .boton_obtener{
+        font-family: 'Inter'!important;
+        font-style: normal;
+        font-weight: 700!important;
+        /* font-size: 32px!important; */
+        line-height: 124.5%!important;
+        /* or 40px */
+    
+        text-align: center;
+        letter-spacing: 0.335em!important;
+        padding-top: 2rem!important;
+        padding-bottom: 2rem!important;
+    
+        color: #FFFFFF!important;
+        background-color: #83D046!important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 12px!important;
+        mix-blend-mode: normal;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        width: calc(50%);
+        font-size: calc(3vw)!important;
+    }
+
+    .boton_obtener:hover{
+        background-color: #69DF0D!important ;
+    }
+}
+
+@media (max-width: 1023px) {
+    .campeon{
+        width: 75%;
+    }
+    
+    .obtener{
+        width: 50%;
+    }
+}
+

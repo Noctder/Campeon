@@ -1,0 +1,28 @@
+.image_radius{
+    border: 2px solid #5F9646;
+    border-radius: 50%;
+}
+
+.input_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo_lic{
+    width: 30%;
+}
+
+.logo_firma{
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .logo_lic{
+        width: 100%;
+    }
+    .logo_firma{
+        width: 100%;
+    }
+}

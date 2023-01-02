@@ -1,0 +1,155 @@
+/* Habilitar rem */
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    color: #5F9646;
+    font-size: 2rem;
+}
+
+/* Carta */
+
+.carta{
+    text-align: center; 
+ }
+ 
+.entrada{
+    display: flex;
+    box-sizing: border-box;
+
+    border: 3px solid #5F9646;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    padding: 1rem;
+    align-items: center;
+}
+
+.entrada_contenido{
+    text-align: justify;
+    padding: 1rem;
+}
+
+.flex_carta{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.alinear-derecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+ 
+.boton_carta{
+    background-color: #83D046!important;
+    color: #FFFFFF!important;
+    padding: 1rem 3rem!important;
+    margin-top: 3rem;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    font-weight: bold!important;
+    border-radius: .4rem!important;
+    text-align: center!important;
+    border: none!important;
+    font-family: 'Inter'!important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boton_carta:hover{
+    background-color: #A9CF46!important ;
+}
+
+.rounded-circle{
+    border-color: #333333 !important;
+}
+
+.Mui-selected.rounded-circle {
+    border-color: #54b4d3 !important;
+}
+
+.css-lfwcke-MuiTabs-flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.css-35zqo5-MuiTabs-root {
+    overflow: visible!important;
+    min-height: auto!important;
+}
+
+#simple-tabpanel-0, #simple-tabpanel-2, #simple-tabpanel-4{
+    width: 80%;
+}
+
+/* Media Queries */
+@media (max-width: 1023px) {
+    .logo-lic{
+        width: 40%!important;
+    }
+
+    .entrada{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    
+        border: 3px solid #5F9646;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 12px;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .video_iframe{
+    width: 100%;
+    }
+    
+    .icons_Text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .campeonblack{
+        width: 100%!important;
+    }
+
+    .facil{
+        width: 80%!important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-lic{
+        width: 25%!important;
+    }
+    .video_iframe{
+        width: 100%;
+    }
+}

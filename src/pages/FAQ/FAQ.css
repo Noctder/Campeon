@@ -1,0 +1,7 @@
+.MuiAccordionSummary-root.Mui-expanded:not(.collapsed){
+    background-color: #A1A1A15A;
+}
+
+.MuiSvgIcon-root{
+    font-size: 2.5rem!important;
+}

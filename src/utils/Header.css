@@ -1,0 +1,43 @@
+.headerr{
+    width: 100%;
+    position: relative;
+    background-color: #A1A1A1;
+}
+
+.barra{
+    padding-top: 4rem;
+}
+
+@media (min-width: 1000px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 999px) {
+    .barra{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.no-margin{
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
